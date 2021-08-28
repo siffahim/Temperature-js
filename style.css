@@ -1,0 +1,10 @@
+
+body {
+    background-image: url('https://hips.hearstapps.com/edc.h-cdn.co/assets/15/36/1441304848-national-skyscraper-day-01.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+input,button {
+    height: 48px;
+}
