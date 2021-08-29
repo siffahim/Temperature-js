@@ -29,7 +29,7 @@ const displayWeather = data => {
             <h1>${data.name}</h1>
             <h2><span>${(data.main.temp - 273.15).toFixed(2)}</span>&deg;C</h2>
             <h6>${data.weather[0].main}</h6>
-            <p>${data.weather[0].description}</p>
+            <p>Humidity: ${data.main.humidity}%</p>
         `
     
         weather.appendChild(div)
