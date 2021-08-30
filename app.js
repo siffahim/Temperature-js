@@ -26,6 +26,7 @@ const displayWeather = data => {
     try {
         const div = document.createElement('div');
         div.innerHTML = `
+            <img src="https://openweathermap.org/img/w/${data.weather[0].icon}.png" width="100px"/>
             <h1>${data.name}</h1>
             <h2><span>${(data.main.temp - 273.15).toFixed(2)}</span>&deg;C</h2>
             <h6>${data.weather[0].main}</h6>
