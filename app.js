@@ -20,7 +20,7 @@ const searchWetaherText = (id, text) => {
 
 const displayWeather = tempareture => {
     console.log(tempareture.cod)
-    if (tempareture.cod == 404) {
+    if (tempareture.cod === '404') {
         document.getElementById('waring').style.display = 'block';
         document.getElementById('weather').style.display = 'none';
     }
@@ -38,7 +38,7 @@ const displayWeather = tempareture => {
         document.getElementById('weather').style.display = 'block';
     }
 
-    
+
     //another way
    /*  try {
         const weather = document.getElementById('weather');
@@ -55,7 +55,7 @@ const displayWeather = tempareture => {
         weather.appendChild(div)
         document.getElementById('waring').style.display = 'none';
     } catch (err) {
-       
+        document.getElementById('waring').style.display = 'block';
     }
  */
 
